@@ -23,7 +23,7 @@ jobs:
       - name: Prepare build folder
         run: |
           mkdir build
-          cp -r template/. build/
+          cp -r templates/. build/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
