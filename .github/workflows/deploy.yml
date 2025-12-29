@@ -3,8 +3,8 @@ name: Deploy Website to GitHub Pages
 on:
   push:
     branches:
-      - main     # Deploy only when main branch is updated
-  workflow_dispatch:  # Allow manual deploy
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -19,18 +19,16 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
 
-      # Copy everything from template/ into a temporary build folder
+      # Copy the full template directory structure
       - name: Prepare build folder
         run: |
           mkdir build
-          cp -r templates/* build/
+          cp -r template/. build/
 
-      # Upload build folder as artifact for GitHub Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
 
-      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
