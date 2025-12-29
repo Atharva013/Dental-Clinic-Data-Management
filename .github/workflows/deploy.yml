@@ -23,7 +23,7 @@ jobs:
       - name: Prepare build folder
         run: |
           mkdir build
-          cp -r template/* build/
+          cp -r templates/* build/
 
       # Upload build folder as artifact for GitHub Pages
       - name: Upload artifact
