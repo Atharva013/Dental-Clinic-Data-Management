@@ -96,6 +96,7 @@ This project addresses these issues by providing a **structured, normalized, and
 
 ```
 Dental-Clinic-Data-Management/
+├── app.py
 ├── database/
 │   ├── schema.sql
 │   └── sample_data.sql
@@ -133,7 +134,7 @@ SOURCE schema.sql;
 SOURCE sample_data.sql;
 ```
 
-5. Open the frontend HTML files in a web browser
+5.Run the application loca
 
 ---
 
@@ -169,5 +170,4 @@ SOURCE sample_data.sql;
 ## Author
 
 **Atharva Jadhav**
-B.Tech – Computer Science Engineering
-(IoT, Cyber Security & Blockchain)
+
