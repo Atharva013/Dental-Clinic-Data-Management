@@ -134,8 +134,10 @@ SOURCE schema.sql;
 SOURCE sample_data.sql;
 ```
 
-5.Run the application loca
+5.Run the application locally:
 
+```bash
+python app.py
 ---
 
 ## Design Constraints and Assumptions
